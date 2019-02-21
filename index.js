@@ -3,7 +3,9 @@ $(document).ready(function (){
     console.log('button clicked')
   })
 });
-
+function displayError() {
+  $('#errors').html("I'm sorry, there's been an error. Please try again.")
+}
 
 function searchRepositories() {
   const searchTerm = $('#searchTerms').val() //get value of the search term inputted
@@ -25,9 +27,7 @@ function searchRepositories() {
 }
 
 
-function displayError() {
-  $('#errors').html("I'm sorry, there's been an error. Please try again.")
-}
+
 
 function showCommits(repo) {
   const repository = repo.dataset.repository
